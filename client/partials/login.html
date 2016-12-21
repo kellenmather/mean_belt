@@ -1,0 +1,8 @@
+<div>
+    <h3>Login</h3>
+    <div ng-show="uC.errMsg"><span>{{uC.errMsg.errors.name.message}}</span></div>
+    <form ng-submit="uC.login()">
+        <input type="text" ng-model="uC.user.name" placeholder="Full Name">
+        <button type="submit">Enter</button>
+    </form>
+</div>
